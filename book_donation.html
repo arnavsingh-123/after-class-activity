@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Book Donation Form</title>
+  </head>
+  <body>
+
+    <h1>📚 Book Donation Form</h1>
+    <p>Fill in the form below to donate books to the library!</p>
+    <hr>
+
+    <form>
+
+      <fieldset>
+        <legend>Donor Details</legend>
+
+        <label>Your Name</label><br>
+        <input type="text" id="name" placeholder="e.g. John Doe"><br><br>
+
+        <label>Donor ID</label><br>
+        <input type="password" id="donor-id" placeholder="e.g. LIB12345"><br><br>
+
+        <label>Donation Date</label><br>
+        <input type="date" id="donation-date"><br>
+        <small>e.g. 2026-09-12</small>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Book Details</legend>
+
+        <label>Choose Book Category</label><br>
+        <select id="category">
+          <option value="">-- Select a category --</option>
+          <option value="fiction">Fiction (e.g. Novels)</option>
+          <option value="science">Science (e.g. Physics, Biology)</option>
+          <option value="history">History (e.g. World Wars)</option>
+          <option value="education">Education (e.g. Textbooks)</option>
+        </select><br><br>
+
+        <label>Book Condition</label><br>
+        <input type="radio" name="condition" value="new"> Like New (e.g. Unused)<br>
+        <input type="radio" name="condition" value="good"> Good (e.g. Slightly used)<br>
+        <input type="radio" name="condition" value="used"> Used (e.g. Old but readable)<br><br>
+
+        <label>Book Title or Additional Notes</label><br>
+        <textarea id="notes" rows="3" cols="35" placeholder="e.g. 'The Alchemist by Paulo Coelho' or 'Set of Class 9 Science books'"></textarea><br>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Preferred Drop-Off Day</legend>
+
+        <input type="checkbox" value="mon"> Monday (e.g. Morning)<br>
+        <input type="checkbox" value="wed"> Wednesday (e.g. Afternoon)<br>
+        <input type="checkbox" value="fri"> Friday (e.g. Evening)<br>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Donate My Book">
+
+    </form>
+
+  </body>
+</html>
